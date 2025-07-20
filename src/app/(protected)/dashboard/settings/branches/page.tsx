@@ -16,7 +16,7 @@ const BranchesPage = () => {
   return (
     <Suspense fallback={<PageLoader />}>
       <SheetWrapper
-        className="!w-[90vw] !md:w-[40vw]"
+        className="!w-[90vw] md:!w-[40vw]"
         isOpen={isAddBranchSheetOpen}
         setIsOpen={setIsAddBranchSheetOpen}
         title="Add Branch"

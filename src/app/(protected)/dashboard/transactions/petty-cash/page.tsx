@@ -17,7 +17,7 @@ const PettyCashPage = () => {
   return (
     <Suspense fallback={<PageLoader />}>
       <SheetWrapper
-        className="!w-[90vw] !md:w-[40vw]"
+        className="!w-[90vw] md:!w-[40vw]"
         isOpen={isAddPettyCashSheetOpen}
         setIsOpen={setIsAddPettyCashSheetOpen}
         title="Add Petty Cash Entry"

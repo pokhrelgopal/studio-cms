@@ -17,7 +17,7 @@ const AccountsPage = () => {
   return (
     <Suspense fallback={<PageLoader />}>
       <SheetWrapper
-        className="!w-[90vw] !md:w-[40vw]"
+        className="!w-[90vw] md:!w-[40vw]"
         isOpen={isAddAccountSheetOpen}
         setIsOpen={setIsAddAccountSheetOpen}
         title="Add Account"

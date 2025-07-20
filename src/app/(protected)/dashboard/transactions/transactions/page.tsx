@@ -17,7 +17,7 @@ const AllTransactionsPage = () => {
   return (
     <Suspense fallback={<PageLoader />}>
       <SheetWrapper
-        className="!w-[90vw] !md:w-[40vw]"
+        className="!w-[90vw] md:!w-[40vw]"
         isOpen={isAddTransactionSheetOpen}
         setIsOpen={setIsAddTransactionSheetOpen}
         title="Add Transaction"
