@@ -32,7 +32,7 @@ export default function ProtectedLayout({ children }: ProtectedLayoutProps) {
             />
           </div>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-2 md:p-4 pt-0 mx-auto max-w-[1466px] w-full">
+        <div className="flex flex-1 flex-col gap-4 p-2 md:p-0 pt-0 mx-auto max-w-[1466px] w-full">
           {children}
         </div>
       </SidebarInset>

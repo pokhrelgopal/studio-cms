@@ -1,12 +1,12 @@
+import Heading from "@/components/atoms/heading";
 import React from "react";
+import BillingPageComponent from "./_components/billing-page";
 
 const BillingPage = () => {
   return (
     <div>
-      <h1 className="text-2xl font-bold">Billing</h1>
-      <div className="mt-3 p-4 rounded-lg bg-red-100 text-red-600">
-        No plan found.
-      </div>
+      <Heading text="Billing" className="mb-6" />
+      <BillingPageComponent />
     </div>
   );
 };

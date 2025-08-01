@@ -44,7 +44,7 @@ const PaginationComponent = ({ showItemsPerPage = true }: PaginationProps) => {
       debounce((value: number) => {
         setPage(value);
       }, 300),
-    [setPage],
+    [setPage]
   );
 
   useEffect(() => {

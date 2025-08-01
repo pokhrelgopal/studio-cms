@@ -36,8 +36,8 @@ export function NavMain({
   const pathname = usePathname();
 
   return (
-    <SidebarGroup>
-      <SidebarGroupLabel>Platform</SidebarGroupLabel>
+    <SidebarGroup className="!pt-0">
+      <SidebarGroupLabel>Main Navigation</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => {
           const isParentActive = pathname === item.url;
