@@ -34,7 +34,7 @@ const StudentRowActions = ({ student }: Props) => {
       />
 
       <SheetWrapper
-        className="w-full lg:w-[26vw]"
+        className="w-full lg:min-w-[60vw]"
         isOpen={isStudentDetailsOpen}
         setIsOpen={setIsStudentDetailsOpen}
         title="Student Details"

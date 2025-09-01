@@ -50,10 +50,7 @@ const ChangePasswordPage = () => {
         />
         <div className="flex items-center gap-2">
           <Button type="submit" className="rounded-full">
-            Submit
-          </Button>
-          <Button type="button" variant={"outline"} className="rounded-full">
-            Cancel
+            Change Password
           </Button>
         </div>
       </form>

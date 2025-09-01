@@ -49,7 +49,10 @@ const AddStaffForm = () => {
 
   return (
     <FormProvider {...form}>
-      <form className="space-y-5" onSubmit={handleSubmit(handleFormSubmit)}>
+      <form
+        className="space-y-5 mb-5"
+        onSubmit={handleSubmit(handleFormSubmit)}
+      >
         <SplitFormContainer
           title="Personal Details"
           childClassName="space-y-5"
@@ -166,7 +169,7 @@ const AddStaffForm = () => {
                         } else {
                           setValue(
                             "permissions",
-                            permissions.filter((p) => p !== item.value),
+                            permissions.filter((p) => p !== item.value)
                           );
                         }
                       }}

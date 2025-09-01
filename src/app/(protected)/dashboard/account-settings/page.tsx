@@ -72,9 +72,6 @@ const UpdateProfilePage = () => {
           <Button type="submit" className="rounded-full">
             Update Profile
           </Button>
-          <Button type="button" variant="outline" className="rounded-full">
-            Cancel
-          </Button>
         </div>
       </form>
     </SplitFormContainer>

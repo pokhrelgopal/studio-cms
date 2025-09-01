@@ -3,11 +3,11 @@ import { Toaster } from "sonner";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import TanstackProvider from "@/context/tanstack-context";
-import { Lexend } from "next/font/google";
+// import { Lexend } from "next/font/google";
 import { sfProDisplay } from "@/assets/fonts";
 import "./globals.css";
 
-const lexend = Lexend({ subsets: ["latin"], weight: "400" });
+// const lexend = Lexend({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lexend.className} antialiased`}>
+      <body className={`${sfProDisplay.className} antialiased`}>
         <TanstackProvider>
           <NuqsAdapter>{children}</NuqsAdapter>
         </TanstackProvider>

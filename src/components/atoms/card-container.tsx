@@ -10,8 +10,8 @@ const CardContainer = (props: Props) => {
   return (
     <div
       className={cn(
-        "bg-white border-[#DFE3E560] border rounded-md p-3 md:p-6 w-full",
-        props.className,
+        "bg-white border-[#DFE3E550] border rounded-md p-3 md:p-6 w-full",
+        props.className
       )}
     >
       {props.children}

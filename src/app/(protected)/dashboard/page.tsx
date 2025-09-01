@@ -1,24 +1,23 @@
 import CardContainer from "@/components/atoms/card-container";
-
-import {
-  DollarSign,
-  Users,
-  ShoppingCart,
-  FileText,
-  Layers,
-  ClipboardCheck,
-} from "lucide-react";
 import { DashboardCard } from "./_components/dashboard-card";
 import { UpcomingBirthdaysCard } from "./_components/upcoming-birthdays-card";
-import { RevenueCollectionChart } from "./_components/revenue-collection-chart";
+import {
+  Firstline,
+  Layer,
+  MoneyAdd,
+  MoneyRecive,
+  Profile2User,
+} from "iconsax-reactjs";
 
 export default function DashboardPage() {
   return (
     <div className="space-y-8">
+      {/* Combined Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <CardContainer className="w-full bg-white p-4 rounded-lg shadow-sm">
+        {/* Row 1 Left */}
+        <CardContainer className="w-full bg-white p-4 rounded-lg shadow-sm h-fit">
           <DashboardCard
-            icon={DollarSign}
+            icon={MoneyRecive}
             title="Total Transactions"
             value="$0.00"
             iconBgClass="bg-indigo-100"
@@ -26,9 +25,9 @@ export default function DashboardPage() {
             change={{ percentage: "-100%", type: "decrease" }}
           />
         </CardContainer>
-        <CardContainer className="w-full bg-white p-4 rounded-lg shadow-sm">
+        <CardContainer className="w-full bg-white p-4 rounded-lg shadow-sm h-fit">
           <DashboardCard
-            icon={Users}
+            icon={Profile2User}
             title="Total Families"
             value="0"
             iconBgClass="bg-purple-100"
@@ -36,9 +35,9 @@ export default function DashboardPage() {
             change={{ percentage: "-100%", type: "decrease" }}
           />
         </CardContainer>
-        <CardContainer className="w-full bg-white p-4 rounded-lg shadow-sm">
+        <CardContainer className="w-full bg-white p-4 rounded-lg shadow-sm h-fit">
           <DashboardCard
-            icon={ShoppingCart}
+            icon={Firstline}
             title="Total Enrollment"
             value="0"
             iconBgClass="bg-orange-100"
@@ -46,15 +45,16 @@ export default function DashboardPage() {
             change={{ percentage: "-100%", type: "decrease" }}
           />
         </CardContainer>
-        <CardContainer className="w-full bg-white p-4 rounded-lg shadow-sm h-48">
+
+        {/* Birthday Card (Spans 2 rows) */}
+        <CardContainer className="w-full bg-white rounded-lg shadow-sm h-full row-span-2 !p-3">
           <UpcomingBirthdaysCard />
         </CardContainer>
-      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-purple-100">
+        {/* Row 2 Left */}
+        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-purple-100 border-0">
           <DashboardCard
-            icon={FileText}
+            icon={MoneyAdd}
             title="Unpaid Invoices"
             value="0"
             iconBgClass="bg-purple-200"
@@ -62,9 +62,9 @@ export default function DashboardPage() {
             valueColorClass="text-purple-800"
           />
         </CardContainer>
-        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-orange-100">
+        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-orange-100 border-0">
           <DashboardCard
-            icon={Layers}
+            icon={Layer}
             title="Total Classes"
             value="0"
             iconBgClass="bg-orange-200"
@@ -72,19 +72,19 @@ export default function DashboardPage() {
             valueColorClass="text-orange-800"
           />
         </CardContainer>
-        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-green-100">
+        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-green-100 border-0">
           <DashboardCard
-            icon={ClipboardCheck}
+            icon={Profile2User}
             title="Total Staffs"
             value="0"
-            iconBgClass="bg-green-200"
+            iconBgClass="bg-green-100"
             iconTextClass="text-green-700"
             valueColorClass="text-green-800"
           />
         </CardContainer>
       </div>
 
-      <RevenueCollectionChart />
+      {/* <RevenueCollectionChart /> */}
     </div>
   );
 }

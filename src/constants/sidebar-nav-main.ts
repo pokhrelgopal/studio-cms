@@ -1,10 +1,10 @@
-import { Users, ArrowLeftRight, Settings } from "lucide-react";
+import { MoneySend, Profile2User, Setting2 } from "iconsax-reactjs";
 
 export const sidebarNavMain = [
   {
     title: "Families",
     url: "/dashboard/families",
-    icon: Users,
+    icon: Profile2User,
     items: [
       { title: "All Families", url: "/dashboard/families" },
       {
@@ -17,7 +17,7 @@ export const sidebarNavMain = [
   {
     title: "Transactions",
     url: "/dashboard/transactions",
-    icon: ArrowLeftRight,
+    icon: MoneySend,
     items: [
       { title: "Accounts", url: "/dashboard/transactions/accounts" },
       { title: "Transactions", url: "/dashboard/transactions/transactions" },
@@ -27,7 +27,7 @@ export const sidebarNavMain = [
   {
     title: "Settings",
     url: "/dashboard/settings",
-    icon: Settings,
+    icon: Setting2,
     items: [
       {
         title: "Organization Settings",

@@ -9,6 +9,7 @@ interface DashboardCardProps {
   iconBgClass: string;
   iconTextClass: string;
   change?: { percentage: string; type: "increase" | "decrease" };
+  className?: string;
   valueColorClass?: string;
 }
 
@@ -18,6 +19,7 @@ export function DashboardCard({
   value,
   iconBgClass,
   iconTextClass,
+  className,
   change,
   valueColorClass = "text-gray-900",
 }: DashboardCardProps) {
@@ -30,10 +32,12 @@ export function DashboardCard({
     change?.type === "decrease" ? "border-red-200" : "border-green-200";
 
   return (
-    <div className="flex flex-col justify-between h-full">
+    <div
+      className={cn("flex flex-col justify-between h-full gap-3", className)}
+    >
       <div className="flex items-center gap-3">
         <div className={cn("p-2 rounded-lg", iconBgClass)}>
-          <Icon className={cn("h-6 w-6", iconTextClass)} />
+          <Icon className={cn("h-8 w-8", iconTextClass)} />
         </div>
         <div className="flex flex-col">
           <span className="text-sm text-gray-500">{title}</span>
@@ -43,13 +47,13 @@ export function DashboardCard({
         </div>
       </div>
       {change && (
-        <div className="mt-auto flex items-center text-sm">
+        <div className="mt-auto flex items-center text-xs">
           <span
             className={cn(
               "flex items-center gap-1 px-2 py-1 rounded-full border",
               changeBgClass,
               changeBorderClass,
-              changeTextColorClass,
+              changeTextColorClass
             )}
           >
             <ChangeIcon className="h-4 w-4" />

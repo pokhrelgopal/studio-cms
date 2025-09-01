@@ -65,7 +65,6 @@ const AddCategoryForm = ({ onSuccess }: Props) => {
           label="Category Name"
           placeholder="Enter category name"
           error={errors.name?.message}
-          required
         />
 
         <div>
@@ -76,8 +75,8 @@ const AddCategoryForm = ({ onSuccess }: Props) => {
             {...register("description")}
             placeholder="Enter category description"
             className="h-24 mt-1"
+            error={errors.description?.message}
           />
-          <FormErrorMessage message={errors.description?.message} />
         </div>
 
         <SelectField
@@ -86,7 +85,6 @@ const AddCategoryForm = ({ onSuccess }: Props) => {
           label="Status"
           placeholder="Select status"
           options={statusOptions}
-          required
         />
       </div>
 

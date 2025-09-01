@@ -47,7 +47,7 @@ const AddClassForm = () => {
   };
 
   return (
-    <form className="space-y-5" onSubmit={handleSubmit(handleFormSubmit)}>
+    <form className="space-y-5 mb-6" onSubmit={handleSubmit(handleFormSubmit)}>
       <SplitFormContainer title="Class Details">
         <div className="space-y-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

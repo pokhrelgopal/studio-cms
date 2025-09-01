@@ -15,15 +15,15 @@ export const transactionColumns: ColumnDef<Transaction>[] = [
       <div className="text-sm">{row.original.date.toLocaleDateString()}</div>
     ),
   },
-  {
-    accessorKey: "reference",
-    header: "Reference",
-    cell: ({ row }) => (
-      <div className="text-sm font-medium">
-        {row.original.reference || "N/A"}
-      </div>
-    ),
-  },
+  // {
+  //   accessorKey: "reference",
+  //   header: "Reference",
+  //   cell: ({ row }) => (
+  //     <div className="text-sm font-medium">
+  //       {row.original.reference || "N/A"}
+  //     </div>
+  //   ),
+  // },
   {
     accessorKey: "transaction_type",
     header: "Type",
@@ -95,8 +95,8 @@ export const transactionColumns: ColumnDef<Transaction>[] = [
           row.original.status === "paid"
             ? "default"
             : row.original.status === "partial"
-              ? "secondary"
-              : "destructive"
+            ? "secondary"
+            : "destructive"
         }
         className="text-xs"
       >
@@ -104,15 +104,15 @@ export const transactionColumns: ColumnDef<Transaction>[] = [
       </Badge>
     ),
   },
-  {
-    accessorKey: "description",
-    header: "Description",
-    cell: ({ row }) => (
-      <div className="text-sm max-w-[200px] truncate">
-        {row.original.description || "No description"}
-      </div>
-    ),
-  },
+  // {
+  //   accessorKey: "description",
+  //   header: "Description",
+  //   cell: ({ row }) => (
+  //     <div className="text-sm max-w-[200px] truncate">
+  //       {row.original.description || "No description"}
+  //     </div>
+  //   ),
+  // },
   {
     id: "actions",
     header: "Actions",

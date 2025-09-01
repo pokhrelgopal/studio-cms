@@ -67,7 +67,7 @@ const PaginationComponent = ({ showItemsPerPage = true }: PaginationProps) => {
   };
 
   return (
-    <div className="flex items-center justify-between gap-3 p-4 text-sm w-full">
+    <div className="flex items-center justify-between gap-3 p-2 text-sm w-full">
       {/* Items Per Page */}
       {showItemsPerPage && (
         <div className="flex flex-col sm:flex-row items-start md:items-center gap-2 w-full md:w-auto">

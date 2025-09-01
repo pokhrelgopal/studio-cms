@@ -77,9 +77,7 @@ const DomainSettingsPage = () => {
 
 export default DomainSettingsPage;
 
-// zodResolver,react-hook-form,zod
-
-export const blogSchema = z.object({
+const blogSchema = z.object({
   title: z.string().min(1, "Title is required").max(100, "Too long"),
   content: z.string().min(1, "Content is required"),
   age: z.string().optional(),

@@ -1,27 +1,29 @@
-import { Message2, Notification } from "iconsax-reactjs";
 import {
-  LayoutDashboard,
-  PenSquare,
-  List,
-  Users,
-  Banknote,
-} from "lucide-react";
+  Bill,
+  Document,
+  HomeHashtag,
+  Layer,
+  Notification,
+  Teacher,
+  User,
+} from "iconsax-reactjs";
+import { MessageCircle } from "lucide-react";
 
 export const SingleMenuItems = [
   {
     name: "Dashboard",
     url: "/dashboard",
-    icon: LayoutDashboard,
+    icon: HomeHashtag,
   },
   {
     name: "Students",
     url: "/dashboard/students",
-    icon: Users,
+    icon: Teacher,
   },
   {
     name: "Classes",
     url: "/dashboard/class",
-    icon: List,
+    icon: Layer,
   },
   {
     name: "Notifications",
@@ -31,21 +33,21 @@ export const SingleMenuItems = [
   {
     name: "Staffs",
     url: "/dashboard/staffs",
-    icon: Users,
+    icon: User,
   },
   {
     name: "Reports",
     url: "/dashboard/reports",
-    icon: PenSquare,
+    icon: Document,
   },
   {
     name: "Communication",
     url: "/dashboard/communication",
-    icon: Message2,
+    icon: MessageCircle,
   },
   {
     name: "Billing",
     url: "/dashboard/billing",
-    icon: Banknote,
+    icon: Bill,
   },
 ];
