@@ -42,7 +42,7 @@ export function NavMain({
         {items.map((item) => {
           const isParentActive = pathname === item.url;
           const isAnyChildActive = item.items?.some(
-            (subItem) => pathname === subItem.url,
+            (subItem) => pathname === subItem.url
           );
           const shouldOpenCollapsible = isParentActive || isAnyChildActive;
 
@@ -60,7 +60,7 @@ export function NavMain({
                     isActive={isParentActive}
                   >
                     {item.icon && <item.icon className="!size-5" />}
-                    <span className="text-[16px]">{item.title}</span>
+                    <span className="text-[14px]">{item.title}</span>
                     <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
                   </SidebarMenuButton>
                 </CollapsibleTrigger>
@@ -69,6 +69,7 @@ export function NavMain({
                     {item.items?.map((subItem) => (
                       <SidebarMenuSubItem key={subItem.title}>
                         <SidebarMenuSubButton
+                          size="sm"
                           asChild
                           isActive={pathname === subItem.url}
                         >

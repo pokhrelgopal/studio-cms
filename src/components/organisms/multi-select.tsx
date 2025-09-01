@@ -84,10 +84,10 @@ export function MultiSelect({
             aria-expanded={open}
             aria-invalid={!!error}
             className={cn(
-              "w-full justify-between border rounded-md border-gray-300 flex items-center px-3 cursor-pointer",
+              "w-full justify-between border rounded-md border-gray-300 flex items-center px-2 pb-1 cursor-pointer",
               error && "border-red-500",
               disabled && "opacity-50 cursor-not-allowed",
-              className,
+              className
             )}
             onClick={() => !disabled && setOpen(!open)}
           >
@@ -101,16 +101,13 @@ export function MultiSelect({
                   <Badge
                     key={value}
                     variant="secondary"
-                    className={cn(
-                      "mr-1 mb-1 gap-1 pr-0.5 pl-2",
-                      badgeClassName,
-                    )}
+                    className={cn("mr-1 gap-1 pr-0.5 pl-2", badgeClassName)}
                   >
                     {option?.label}
                     <Button
                       variant="ghost"
                       size="sm"
-                      className="h-5 w-5 p-0 rounded-full hover:bg-secondary"
+                      className="h-5 w-5 p-0 rounded-full hover:bg-secondary text-xs"
                       onClick={(e) => {
                         e.stopPropagation();
                         if (!disabled) {
@@ -148,7 +145,7 @@ export function MultiSelect({
                       onSelect={() => handleSelect(option.value)}
                       className={cn(
                         "flex items-center gap-2",
-                        option.disabled && "cursor-not-allowed opacity-60",
+                        option.disabled && "cursor-not-allowed opacity-60"
                       )}
                     >
                       <div
@@ -156,7 +153,7 @@ export function MultiSelect({
                           "flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
                           isSelected
                             ? "bg-primary text-primary-foreground"
-                            : "opacity-50",
+                            : "opacity-50"
                         )}
                       >
                         {isSelected && <Check className="h-3 w-3" />}

@@ -35,7 +35,7 @@ const CommonTable = <T,>({ columns, data, isLoading }: Props<T>) => {
   return (
     <div className="w-full">
       <ScrollArea className="w-full whitespace-nowrap">
-        <Table className="w-full min-w-max overflow-x-auto">
+        <Table className="w-full overflow-x-auto">
           {!isLoading && data && data.length === 0 && (
             <TableCaption>
               <div className="mt-10">No items found</div>
@@ -54,7 +54,7 @@ const CommonTable = <T,>({ columns, data, isLoading }: Props<T>) => {
                         ? null
                         : flexRender(
                             header.column.columnDef.header,
-                            header.getContext(),
+                            header.getContext()
                           )}
                     </span>
                   </TableHead>
@@ -76,7 +76,7 @@ const CommonTable = <T,>({ columns, data, isLoading }: Props<T>) => {
                     <TableCell key={cell.id}>
                       {flexRender(
                         cell.column.columnDef.cell,
-                        cell.getContext(),
+                        cell.getContext()
                       )}
                     </TableCell>
                   ))}

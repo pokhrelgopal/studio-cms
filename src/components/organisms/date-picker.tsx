@@ -52,7 +52,7 @@ export function DatePicker({
       <div
         className={cn(
           "flex w-full flex-col gap-3",
-          needTime ? "flex-1" : "w-full",
+          needTime ? "flex-1" : "w-full"
         )}
       >
         <Popover
@@ -67,10 +67,10 @@ export function DatePicker({
           >
             <div
               className={cn(
-                "w-full border border-gray-300 rounded-md flex items-center justify-between px-3 py-2 text-b2 cursor-pointer",
+                "w-full border border-gray-300 rounded-md flex items-center justify-between px-3 py-2 text-b2 cursor-pointer !text-[13px]",
                 !value && "text-muted-foreground",
                 disabled && "opacity-50 cursor-not-allowed",
-                className,
+                className
               )}
               role="button"
               tabIndex={disabled ? -1 : 0}

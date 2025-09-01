@@ -123,7 +123,7 @@ const AddClassForm = () => {
               render={({ field }) => (
                 <MultiSelect
                   badgeClassName="bg-black/8 rounded-full px-2"
-                  className="text-b2 h-11 text-sm"
+                  className="text-b2 h-9 text-sm"
                   options={daysOptions}
                   selected={field.value}
                   onChangeAction={field.onChange}
@@ -153,10 +153,7 @@ const AddClassForm = () => {
         <div className="space-y-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="">
-              <Label
-                htmlFor="registrationStartDate"
-                className="text-base font-medium"
-              >
+              <Label htmlFor="registrationStartDate" className="mb-2">
                 Registration Start Date
               </Label>
               <Controller

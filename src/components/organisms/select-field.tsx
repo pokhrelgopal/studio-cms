@@ -13,6 +13,7 @@ import { ArrowDown2 } from "iconsax-reactjs";
 import { useController } from "react-hook-form";
 import type { Control, FieldPath, FieldValues } from "react-hook-form";
 import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
 
 export type ObjType = {
   label: string;
@@ -64,7 +65,10 @@ const SelectField = <T extends FieldValues>({
         onValueChange={field.onChange}
         value={field.value || ""}
       >
-        <SelectTrigger className="w-full" id={name}>
+        <SelectTrigger
+          className={cn("w-full", error && "border-red-500")}
+          id={name}
+        >
           <div className="flex items-center gap-2">
             <SelectValue placeholder={placeholder} />
           </div>

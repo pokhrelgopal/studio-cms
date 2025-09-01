@@ -27,15 +27,15 @@ export const studentColumn: ColumnDef<Student>[] = [
       </div>
     ),
   },
-  {
-    accessorKey: "gender",
-    header: "Gender",
-    cell: ({ row }) => (
-      <Badge variant="outline" className="text-xs capitalize">
-        {row.original.gender}
-      </Badge>
-    ),
-  },
+  // {
+  //   accessorKey: "gender",
+  //   header: "Gender",
+  //   cell: ({ row }) => (
+  //     <Badge variant="outline" className="text-xs capitalize">
+  //       {row.original.gender}
+  //     </Badge>
+  //   ),
+  // },
   {
     accessorKey: "dateOfBirth",
     header: "Date of Birth",
@@ -70,15 +70,15 @@ export const studentColumn: ColumnDef<Student>[] = [
       </Badge>
     ),
   },
-  {
-    accessorKey: "skillNote",
-    header: "Skill Note",
-    cell: ({ row }) => (
-      <div className="max-w-[250px] truncate text-sm">
-        {row.original.skillNote || "—"}
-      </div>
-    ),
-  },
+  // {
+  //   accessorKey: "skillNote",
+  //   header: "Skill Note",
+  //   cell: ({ row }) => (
+  //     <div className="max-w-[250px] truncate text-sm">
+  //       {row.original.skillNote || "—"}
+  //     </div>
+  //   ),
+  // },
   {
     id: "actions",
     header: "Actions",

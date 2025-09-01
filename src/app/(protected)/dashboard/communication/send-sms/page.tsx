@@ -90,7 +90,6 @@ export default function SendSMSPage() {
             control={control}
             {...register("to")}
           />
-          <FormErrorMessage message={errors.to?.message} />
         </div>
 
         {selectedReceiver === "staffs" && (

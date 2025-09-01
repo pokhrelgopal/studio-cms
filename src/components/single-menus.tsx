@@ -35,7 +35,7 @@ export function SingleMenu({
             : pathname.startsWith(item.url);
 
           console.log(
-            `${item.url} ${isActive ? "active" : "inactive"} ${pathname} `,
+            `${item.url} ${isActive ? "active" : "inactive"} ${pathname} `
           );
 
           return (
@@ -44,12 +44,12 @@ export function SingleMenu({
                 asChild
                 className={cn(
                   isActive &&
-                    "bg-primary text-white rounded-md hover:bg-primary hover:text-white",
+                    "bg-primary text-white rounded-md hover:bg-primary hover:text-white"
                 )}
               >
                 <a href={item.url}>
                   <item.icon className="!size-5" />
-                  <span className="text-[15px]">{item.name}</span>
+                  <span className="text-[14px]">{item.name}</span>
                 </a>
               </SidebarMenuButton>
             </SidebarMenuItem>

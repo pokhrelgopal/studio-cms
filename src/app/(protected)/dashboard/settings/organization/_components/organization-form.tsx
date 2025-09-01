@@ -66,7 +66,7 @@ export default function OrganizationForm() {
   };
 
   return (
-    <form className="space-y-6" onSubmit={handleSubmit(handleFormSubmit)}>
+    <form className="space-y-6 pb-6" onSubmit={handleSubmit(handleFormSubmit)}>
       <SplitFormContainer
         title="Organization Details"
         childClassName="space-y-6"

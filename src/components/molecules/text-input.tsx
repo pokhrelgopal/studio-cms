@@ -30,14 +30,15 @@ const TextInput = forwardRef<HTMLInputElement, Props>(
           {...rest}
           className={cn(
             "w-full mt-2 rounded-md border px-3 py-2 focus:border-primary",
-            className,
+            error && "border-red-500",
+            className
           )}
         />
 
         <FormErrorMessage message={error} />
       </div>
     );
-  },
+  }
 );
 
 TextInput.displayName = "TextInput";

@@ -93,7 +93,6 @@ export default function SendEmailPage() {
             options={receiverOptions}
             {...register("to")}
           />
-          <FormErrorMessage message={errors.to?.message} />
         </div>
 
         {/* Roles if staffs selected */}
@@ -153,7 +152,8 @@ export default function SendEmailPage() {
         {/* Attachments */}
         <div className="space-y-1">
           <Label htmlFor="attachments" className="text-md">
-            Attachments
+            Attachments{" "}
+            <span className="text-gray-400 text-sm">(Optional)</span>
           </Label>
           <Dropzone
             multiple={true}
