@@ -35,25 +35,25 @@ export const classColumns: ColumnDef<Class>[] = [
       <div className="text-sm">{row.original.studioBranch}</div>
     ),
   },
-  {
-    accessorKey: "time",
-    header: "Time",
-    cell: ({ row }) => <div className="text-sm">{row.original.time}</div>,
-  },
-  {
-    accessorKey: "classDuration",
-    header: "Duration",
-    cell: ({ row }) => (
-      <div className="text-sm">{row.original.classDuration}</div>
-    ),
-  },
-  {
-    accessorKey: "classCapacity",
-    header: "Capacity",
-    cell: ({ row }) => (
-      <div className="text-sm">{row.original.classCapacity} students</div>
-    ),
-  },
+  // {
+  //   accessorKey: "time",
+  //   header: "Time",
+  //   cell: ({ row }) => <div className="text-sm">{row.original.time}</div>,
+  // },
+  // {
+  //   accessorKey: "classDuration",
+  //   header: "Duration",
+  //   cell: ({ row }) => (
+  //     <div className="text-sm">{row.original.classDuration}</div>
+  //   ),
+  // },
+  // {
+  //   accessorKey: "classCapacity",
+  //   header: "Capacity",
+  //   cell: ({ row }) => (
+  //     <div className="text-sm">{row.original.classCapacity} students</div>
+  //   ),
+  // },
   {
     accessorKey: "classFee",
     header: "Fee",

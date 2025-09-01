@@ -8,7 +8,7 @@ type Props = {
 
 const Heading = (props: Props) => {
   return (
-    <h2 className={cn("text-xl md:text-[29px] font-medium", props.className)}>
+    <h2 className={cn("text-xl md:text-[29px] font-semibold", props.className)}>
       {props.text}
     </h2>
   );
