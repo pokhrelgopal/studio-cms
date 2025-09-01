@@ -4,7 +4,6 @@ import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import TanstackProvider from "@/context/tanstack-context";
 import { DM_Sans } from "next/font/google";
-import { sfProDisplay } from "@/assets/fonts";
 import "./globals.css";
 
 const font = DM_Sans({ subsets: ["latin"], weight: "400" });

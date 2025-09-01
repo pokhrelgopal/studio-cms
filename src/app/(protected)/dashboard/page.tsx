@@ -13,7 +13,7 @@ export default function DashboardPage() {
   return (
     <div className="space-y-8">
       {/* Combined Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Row 1 Left */}
         <CardContainer className="w-full bg-white p-4 rounded-lg shadow-sm h-fit">
           <DashboardCard
@@ -46,13 +46,8 @@ export default function DashboardPage() {
           />
         </CardContainer>
 
-        {/* Birthday Card (Spans 2 rows) */}
-        <CardContainer className="w-full bg-white rounded-lg shadow-sm h-full row-span-2 !p-3">
-          <UpcomingBirthdaysCard />
-        </CardContainer>
-
         {/* Row 2 Left */}
-        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-purple-100 border-0">
+        <CardContainer className="w-full rounded-lg shadow-sm bg-purple-100 border-0">
           <DashboardCard
             icon={MoneyAdd}
             title="Unpaid Invoices"
@@ -62,7 +57,7 @@ export default function DashboardPage() {
             valueColorClass="text-purple-800"
           />
         </CardContainer>
-        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-orange-100 border-0">
+        <CardContainer className="w-full rounded-lg shadow-sm bg-orange-100 border-0">
           <DashboardCard
             icon={Layer}
             title="Total Classes"
@@ -72,12 +67,13 @@ export default function DashboardPage() {
             valueColorClass="text-orange-800"
           />
         </CardContainer>
-        <CardContainer className="w-full p-4 rounded-lg shadow-sm bg-green-100 border-0">
+        <CardContainer className="w-full rounded-lg shadow-sm bg-green-100 border-0">
           <DashboardCard
+            className="!h-fit"
             icon={Profile2User}
             title="Total Staffs"
             value="0"
-            iconBgClass="bg-green-100"
+            iconBgClass="bg-green-200"
             iconTextClass="text-green-700"
             valueColorClass="text-green-800"
           />

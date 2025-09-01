@@ -49,7 +49,7 @@ const CommonTable = <T,>({ columns, data, isLoading }: Props<T>) => {
                     key={header.id}
                     className={header.column.id === "select" ? "w-12" : ""}
                   >
-                    <span className="text-b2b">
+                    <span className="font-semibold">
                       {header.isPlaceholder
                         ? null
                         : flexRender(
