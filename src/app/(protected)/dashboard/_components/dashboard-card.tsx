@@ -41,7 +41,7 @@ export function DashboardCard({
         </div>
         <div className="flex flex-col">
           <span className="text-sm text-gray-500">{title}</span>
-          <span className={cn("text-2xl font-bold", valueColorClass)}>
+          <span className={cn("text-xl font-bold", valueColorClass)}>
             {value}
           </span>
         </div>
